@@ -1,0 +1,173 @@
+:root {
+  --header-bg-color: #4c2719;
+  --header-border-color: #f7ee7f;
+  --home-btn-color: #f46036;
+  --menu-btn-color: #f46036;
+  --about-btn-color: #f46036;
+
+  --body-bg-color: #4c2719;
+
+  --homepage-bg-color: #f7ee7f;
+
+  --menuPage-bg-color: #f7ee7f;
+  --aboutPage-bg-color: #f7ee7f;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--body-bg-color);
+}
+
+#content {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+header {
+  background-color: var(--header-bg-color);
+  height: 75px;
+  border-bottom: 1px solid var(--header-border-color);
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  padding-top: 20px;
+  list-style-type: none;
+}
+
+.nav-btn {
+  width: 100px;
+  height: 35px;
+  border-radius: 15px;
+  border-style: none;
+}
+
+.nav-btn:hover {
+  opacity: 60%;
+}
+
+.nav-btn:active {
+  opacity: 90%;
+}
+
+#homeBtn {
+  background-color: var(--home-btn-color);
+}
+
+#menuBtn {
+  background-color: var(--menu-btn-color);
+}
+
+#aboutBtn {
+  background-color: var(--about-btn-color);
+}
+
+#homepage {
+  display: grid;
+  grid-template-areas:
+    "h1 h1"
+    "img p";
+  grid-template-rows: 80px 400px;
+  grid-template-columns: 400px 400px;
+  background-color: var(--homepage-bg-color);
+  align-items: center;
+  align-self: center;
+  border-radius: 5px;
+  margin-top: 20px;
+}
+
+#homepage h1 {
+  grid-area: h1;
+  text-align: center;
+  font-size: 42px;
+  text-decoration: underline;
+}
+
+#homepage img {
+  grid-area: img;
+  align-self: center;
+  justify-self: center;
+  width: 260px;
+  height: 380px;
+  border-radius: 5px;
+}
+
+#homepage p {
+  grid-area: p;
+  align-self: center;
+  margin-right: 20px;
+}
+
+#menuPage {
+  background-color: var(--menuPage-bg-color);
+  margin-top: 50px;
+  text-align: center;
+  width: 500px;
+  align-self: center;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  padding-top: 10px;
+}
+
+#menuPage h2 {
+  font-size: 32px;
+  text-decoration: underline;
+  grid-area: h2;
+}
+#menuPage ul {
+  list-style-type: none;
+  grid-area: ul;
+}
+
+#menuPage ul li {
+  margin: 10px 20px 10px 20px;
+  text-decoration: underline;
+  display: flex;
+  justify-content: space-between;
+}
+
+#menuPage img {
+  width: 520px;
+  height: 380px;
+  border-radius: 5px;
+  grid-area: img;
+  align-self: center;
+}
+
+#aboutPage {
+  background-color: var(--aboutPage-bg-color);
+  margin-top: 50px;
+  text-align: center;
+  width: 700px;
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  padding: 15px;
+  border-radius: 5px;
+}
+
+#aboutPage h2 {
+
+}
+
+#aboutPage p {
+  width: 420px;
+  align-self: center;
+  margin: 10px;
+}
+
+#aboutPage img {
+  width: 400px;
+  height: 460px;
+  border-radius: 5px;
+  align-self: center;
+}
